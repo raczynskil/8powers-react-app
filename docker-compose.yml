@@ -1,0 +1,26 @@
+services:
+  dev:
+    build: .
+    ports:
+      - "3000:3000"  # Mapowanie portu 3000 (vite dev)
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run dev -- --host  # Uruchomienie serwera deweloperskiego Vite
+
+  preview:
+    build: .
+    ports:
+      - "4173:4173"  # Mapowanie portu 4173 (vite preview)
+    environment:
+      - NODE_ENV=production
+    command: sh -c "npm run build && npm run preview -- --host"  # Budowanie i uruchomienie podglądu produkcji
+
+  test:
+    build: .
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run test  # Uruchomienie testów
