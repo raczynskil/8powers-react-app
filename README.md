@@ -1,6 +1,6 @@
 ## 🚀 Wymagania wstępne
 
-- Node.js: Upewnij się, że masz zainstalowaną odpowiednią wersję Node.js. Zalecamy użycie nvm do zarządzania wersjami Node.js.
+- Node.js: Upewnij się, że masz zainstalowaną odpowiednią wersję Node.js. Zalecam użycie nvm do zarządzania wersjami Node.js.
 - npm: Menadżer pakietów.
 - Docker (opcjonalnie): Wymagany do uruchomienia aplikacji w kontenerach.
 
@@ -14,6 +14,8 @@
 - Redux – Zarządzanie stanem globalnym aplikacji.
 - React Query – Zarządzanie danymi i cache'owaniem zapytań API.
 - Tailwind CSS – CSS framework. https://tailwindcss.com
+- React hook form - Obsługa formularzy https://react-hook-form.com
+- Zod - Walidacja formularzy
 - ESLint – Narzędzie do analizy statycznej kodu.
 - Prettier – Narzędzie do formatowania kodu.
 - Vitest – Framework do testowania jednostkowego.
